@@ -3,7 +3,7 @@ name: master-test
     push:
       branches:
         - master
-      jobs:
+jobs:
         check-bats-version:
           runs-on: ubuntu-latest
           steps:
