@@ -1,6 +1,6 @@
 name: learn-github-actions
 on: [push]
-branches: [dev]
+branches: [master]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
@@ -11,4 +11,4 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-      - run: echo "This tests works on Dev"
+      - run: echo "This tests works on Master"
