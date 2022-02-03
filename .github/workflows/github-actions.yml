@@ -11,8 +11,4 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-<<<<<<< HEAD
       - run: echo "This tests works on Dev"
-=======
-      - run: echo "Test one works Kareem proceed to test two!"
->>>>>>> 5b2a393d969be06c96767e49f0154296dc720aba

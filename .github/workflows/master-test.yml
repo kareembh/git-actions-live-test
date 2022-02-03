@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: master-test
 on: [push]
 branches: [master]
 jobs:
