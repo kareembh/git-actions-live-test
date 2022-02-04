@@ -4,17 +4,15 @@ on:
     branches:
       - 'dev'
 jobs:
-  deploy:
-    name: 🚀 Deploy website every commit
+  check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - name: 📂 Sync files
-        uses: ./
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          server: ftp.kareembh@newtype.solutions
-          username: kareembh@newtype.solutions
-          password: ${{ secrets.ftp_password }}
-          protocol: ftps
-
+          node-version: '14'
+      - run: npm install -g bats
+      - run: bats -v
+      - run: echo "This tests works on Dev"
 
 
