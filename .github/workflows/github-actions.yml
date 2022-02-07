@@ -14,7 +14,7 @@ jobs:
       - name: 📂 Sync files
         uses: ./.github/workflows/github-actions.yml
         with:
-          server: kareembh@newtype.solutions
+          server: newtype.solutions
           username: kareembh@newtype.solutions
           password: Ghfy1992
 #           protocol: ftps
