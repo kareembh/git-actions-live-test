@@ -16,8 +16,9 @@ jobs:
         with:
           server: kareembh@newtype.solutions
           username: kareembh@newtype.solutions
-          password: 'Ghfy1992'
-          protocol: ftps
+          password: Ghfy1992
+#           protocol: ftps
+          server-dir: /public_html/dev.newtype.solutions/
 
 
 
