@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-node@v2
 
       - name: 📂 Sync files
-        uses: ./
+        uses: ./kareembh/git-actions-live-test/workflows/.github/workflows/github-actions.yml
         with:
           server: kareembh@newtype.solutions
           username: kareembh@newtype.solutions
