@@ -17,7 +17,8 @@ jobs:
         server: newtype.solutions
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/test/dev.newtype.solutions/
+        protocol: ftps
+        server-dir: /public_html/dev.newtype.solutions/
 
 
 
